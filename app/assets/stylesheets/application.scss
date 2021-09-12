@@ -1,5 +1,69 @@
 @import "bootstrap";
+/* header */
+.header-top {
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+}
 
 .header-logo {
     font-size: 3em;
 }
+/* home  */
+
+.home {               
+    background-image: image-url('taiga-2.jpg');    
+    background-size: cover;
+}
+
+.home-mid {
+    padding: 15em 0 20em 0;    
+}
+
+/* btn */
+.btn {
+    margin: auto; 
+    position: relative;
+    display: block;
+    background-image: linear-gradient(135deg, rgb(85, 197, 231), #1c526b); 
+    border-radius: 30px; 
+    width: 30em; 
+    height: 60px; 
+    line-height: 60px; 
+    text-decoration: none; 
+    overflow: hidden; 
+    cursor: pointer;    
+  }
+  
+  /* text of btn */
+  .btn__text {
+    position: absolute;
+    left: 0;
+    display: block;
+    height: 100%; 
+    width: 100%; 
+    color: #fff; 
+    font-size: 16px; 
+    font-weight: bold; 
+    text-align: center; 
+    transition: all 0.3s; 
+  }
+  
+  /* text of btn (default text) */
+  .btn__text:nth-child(1) {
+    top: 0;
+  }
+  
+  /* text of btn (hidden text) */
+  .btn__text:nth-child(2) {
+    top: 100%;
+  }
+  
+  /* action of btn hover */
+  .btn:hover .btn__text:nth-child(1) {
+    top: -100%;
+  }
+  
+  .btn:hover .btn__text:nth-child(2) {
+    top: 0;
+  }
