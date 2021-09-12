@@ -1,31 +1,10 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark font-weight-bold">
-    <div class="container">
-        <h1 class="navbar-brand header-logo">WT</h1>        
-      <!-- right side select something -->
-        <form class="form-inline my-2 my-lg-0">
-            <ul class="navbar-nav mr-auto select">
-                <li class="nav-item active mr-3">
-                    <%= link_to root_path, class: "nav-link" do %>            
-                        <p class="select">HOME<br>ホーム</p>                            
-                    <% end %>
-                </li>
-                <li class="nav-item active mr-3">
-                    <%= link_to profile_path, class: "nav-link" do %>                    
-                        <p class="select">PROFILE<br>プロフィール</p>
-                    <% end %>
-                </li>
-                <li class="nav-item active mr-3">
-                    <%= link_to works_path, class: "nav-link" do %>                    
-                        <p class="select">WORKS<br>作品</p>
-                    <% end %>
-                </li>                
-                <li class="nav-item active mr-3">
-                    <%= link_to contact_path, class: "nav-link" do %>                    
-                        <p class="select">CONTACT<br>連絡先</p>
-                    <% end %>
-                </li>
-            </ul>
-        </form>            
-        </div>
+<footer class="bg-dark">
+    <div class="container footer text-center">                 
+        <%= link_to image_tag("github-icon.png", class: "rounded-circle images"), "/" %>           
+        <%# https://github.com/TaigaWatanabe?tab=repositories %>
+        <%= link_to image_tag('twitter-icon.png', class: "rounded-circle images"), "/" %>
+        <%# https://twitter.com/taiga_traveler %>
+        <%= link_to image_tag('instagram-icon.jpeg', class: "rounded-circle images"), "/" %>  
+        <%# https://www.instagram.com/travel_world_2025/?hl=ja %>
     </div>
-</nav>
+</footer>
