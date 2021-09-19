@@ -1,2 +1,49 @@
-<h1>Pages#home</h1>
-<h1>Find me in app/views/pages/home.html.erb</h1>
+<div class="works bg-light">
+    <div class="container font-italic text-center">
+        <h1 class="mb-5">My Works</h1>
+        <div class="card-deck">
+            <%# work-1 %>
+            <div class="card hide">
+                <%= image_tag "coffee-shop.png",class: "card-img-top" %>
+                <%# <img src="images/coffee-shop.png" class="card-img-top" alt="..."> %>
+                <div class="card-body">
+                    <h5 class="card-title">Coffee Shop</h5>
+                    <p class="card-text">This is my first website. You can make a reservation by entering name, phone-number, how many guests, date. You can use a credit card in booking time.</p>
+                    <%= link_to "Go to Web site", "https://taigawatanabe.github.io/coffeebean/index.html", class: "btn btn-primary",target: :_blank%>
+                </div>
+                <div class="hide2">
+                    <div class="hide3">HTML<br>CSS</div>
+                </div>
+            </div>
+            <%# /work-1 %>
+            <%# work-2 %>
+            <div class="card hide">
+                <%= image_tag "E-learning.png",class: "card-img-top" %>
+                <%# <img src="images/coffee-shop.png" class="card-img-top" alt="..."> %>
+                <div class="card-body">
+                    <h5 class="card-title">Elearning system</h5>
+                    <p class="card-text">This is my first application that can learn words. I also made signin, signout, signup functions etc.. You can try it!<br><br>Email : admin@gmail.com<br>Password : password</p>
+                    <%= link_to "Go to Web site", "https://taiga-els.herokuapp.com/", class: "btn btn-primary",target: :_blank%>
+                </div>
+                <div class="hide2">
+                    <div class="hide3">HTML,CSS,Ruby,Ruby on Rails,MySQL,Git,Github,Docker</div>
+                </div>
+            </div>
+            <%# /work-2 %>
+            <%# work-3 %>
+            <div class="card hide">
+                <%= image_tag "coffee-shop.png",class: "card-img-top" %>
+                <%# <img src="images/coffee-shop.png" class="card-img-top" alt="..."> %>
+                <div class="card-body">
+                    <h5 class="card-title">Air-bnb clone</h5>
+                    <p class="card-text">hello</p>
+                    <%= link_to "Go to Web site", "https://taigawatanabe.github.io/coffeebean/index.html", class: "btn btn-primary",target: :_blank%>
+                </div>
+                <div class="hide2">
+                    <div class="hide3">HTML,CSS,Ruby,Ruby on Rails,MySQL,Git,Github,Docker</div>
+                </div>
+            </div>
+            <%# /work-3 %>
+        </div>
+    </div>
+</div>

@@ -2,109 +2,147 @@
 
 /* header */
 .header-top {
-    z-index: 100;
-    position: fixed;
-    width: 100%;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
 
-    .header-name {
-        font-size: 3em;    
-    }
+  .header-name {
+    font-size: 3em;    
+  }
 
-    .select:hover {
-        color: rgb(85, 197, 231);
-    }
+  .select:hover {
+    color: rgb(85, 197, 231);
+  }
 }
 
 /* home  */
 .home {
-    .home-letter {               
-        background-image: image-url('taiga-2.jpg');    
-        background-size: cover;
+  .home-letter {               
+    background-image: image-url('taiga-2.jpg');    
+    background-size: cover;
+  }
+  
+  .home-mid {
+    padding: 15em 0 20em 0;    
+  }
+  
+  .home-content {
+    /* btn */
+    .btn {
+      margin: auto; 
+      position: relative;
+      display: block;
+      background-image: linear-gradient(135deg, rgb(85, 197, 231), #1c526b); 
+      border-radius: 30px; 
+      width: 30em; 
+      height: 60px; 
+      line-height: 60px; 
+      text-decoration: none; 
+      overflow: hidden; 
+      cursor: pointer;    
+    }
+  
+  /* text of btn */
+    .btn__text {
+      position: absolute;
+      left: 0;
+      display: block;
+      height: 100%; 
+      width: 100%; 
+      color: #fff; 
+      font-size: 16px; 
+      font-weight: bold; 
+      text-align: center; 
+      transition: all 0.3s; 
     }
     
-    .home-mid {
-        padding: 15em 0 20em 0;    
+  /* text of btn (default text) */
+    .btn__text:nth-child(1) {
+      top: 0;
     }
-    
-    .home-content {
-        /* btn */
-        .btn {
-            margin: auto; 
-            position: relative;
-            display: block;
-            background-image: linear-gradient(135deg, rgb(85, 197, 231), #1c526b); 
-            border-radius: 30px; 
-            width: 30em; 
-            height: 60px; 
-            line-height: 60px; 
-            text-decoration: none; 
-            overflow: hidden; 
-            cursor: pointer;    
-        }
-      
-      /* text of btn */
-        .btn__text {
-            position: absolute;
-            left: 0;
-            display: block;
-            height: 100%; 
-            width: 100%; 
-            color: #fff; 
-            font-size: 16px; 
-            font-weight: bold; 
-            text-align: center; 
-            transition: all 0.3s; 
-        }
-        
-      /* text of btn (default text) */
-        .btn__text:nth-child(1) {
-            top: 0;
-        }
-      
-      /* text of btn (hidden text) */
-        .btn__text:nth-child(2) {
-            top: 100%;
-        }
-      
-      /* action of btn hover */
-        .btn:hover .btn__text:nth-child(1) {
-            top: -100%;
-        }
-      
-        .btn:hover .btn__text:nth-child(2) {
-            top: 0;
-        }
+  
+  /* text of btn (hidden text) */
+    .btn__text:nth-child(2) {
+      top: 100%;
     }
+  
+  /* action of btn hover */
+    .btn:hover .btn__text:nth-child(1) {
+      top: -100%;
+    }
+  
+    .btn:hover .btn__text:nth-child(2) {
+      top: 0;
+    }
+  }
 }
 
 
 /* footer */
 footer {
-    padding: 1em;    
+  padding: 1em;    
 
-    .images {
-        width: 3em;
-        margin: 1em;
+  .images {
+    width: 3em;
+    margin: 1em;
 
-        &:hover {
-            opacity: 0.5;
-            transition: all 0.3s;
-        }
+    &:hover {
+      opacity: 0.5;
+      transition: all 0.3s;
     }
+  }
 }
 
 /* profile */
 .profile {
-    .introduce {        
-        padding: 10em 0 10em 0;
-                
-        img {
-            float: left;            
-        }
-
-        .detail h4 {
-            margin-top: 1em;
-        }
+  .introduce {        
+    padding: 10em 0 10em 0;
+            
+    img {
+      float: left;
     }
+
+    .detail h4 {
+      margin-top: 1em;
+    }
+  }
 }
+
+/* works */
+.works {
+  padding: 10em 0 10em 0;
+
+  .btn {
+    width: 100%;
+  }
+
+  .hide {        
+    overflow:	hidden;	
+    position:	relative;	/* 相対位置指定 */
+
+    .hide3 {
+      font-size: 120%;
+      margin: 0 auto;      
+      color:#fff;
+      padding-top: 1em;
+    }
+  
+    .hide2 {
+      width: 100%;
+      height:	40%;
+      position:	absolute;	/* 絶対位置指定 */
+      top: 0;
+      left:	0;
+      opacity: 0;	/* マスクを表示しない */
+      background-color:	rgba(0,0,0,0.4);	/* マスクは半透明 */
+      -webkit-transition:	all 0.2s ease;
+      transition:	all 0.2s ease;
+    }
+  
+    &:hover .hide2 {
+      opacity: 1;	/* マスクを表示する */
+    }
+  }
+}
+
 
