@@ -1,12 +1,15 @@
 <footer class="bg-dark">
-    <div class="container footer text-center">                 
-        <%= link_to image_tag("footer/github-icon.png", class: "rounded-circle images"), "/" %>           
+    <div class="container footer text-center">
+        <h2 class="text-white">Contact</h2>
+        <%= link_to image_tag("footer/github-icon.png", class: "rounded-circle images"), "/" %>
         <%# https://github.com/TaigaWatanabe?tab=repositories %>
         <%= link_to image_tag('footer/twitter-icon.png', class: "rounded-circle images"), "/" %>
         <%# https://twitter.com/taiga_traveler %>
-        <%= link_to image_tag('footer/instagram-icon.jpeg', class: "rounded-circle images"), "/" %>  
+        <%= link_to image_tag('footer/instagram-icon.jpeg', class: "rounded-circle images"), "/" %>
         <%# https://www.instagram.com/travel_world_2025/?hl=ja %>
         <%= link_to image_tag('footer/facebook-icon.png', class: "rounded-circle images"), "/" %>
         <%# https://www.facebook.com/profile.php?id=100028249238643 %>
+        <%= mail_to 'user@example.com',image_tag('footer/mail-icon.png', class: "rounded-circle images") %>
+        <%# 1208taiga@gmail.com %>
     </div>
 </footer>
